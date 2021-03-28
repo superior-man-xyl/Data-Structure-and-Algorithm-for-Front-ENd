@@ -9,6 +9,7 @@
         for(let j=i-1;j>=0;j--){
             if(nums[target]<nums[j]){
                [nums[target],nums[j]]= [nums[j],nums[target]];
+               //使用es6的解构赋值可以快速的将其互换
                 target=j;
             }else{
                 break;

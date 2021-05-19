@@ -10,6 +10,8 @@
  * @param {TreeNode} root
  * @return {number}
  */
+// 有个很巧妙的方法
+//例如示例二，091 24 3 2/3 24 091 2 这样走一样长的路
  var minDepth = function(root) {
     if(!root){
         return 0;//如果是空树，或后面遇到了空结点,也是最底层的计算值

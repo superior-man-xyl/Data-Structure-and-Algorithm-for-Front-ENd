@@ -10,7 +10,7 @@ var reverse = function(x) {
         x=~~(tem);//~是按位取反的意思，计算机里面处理二进制数据时候的非，
         // ~~就是再转回来，利用两个按位取反的符号，进行类型的转换，转换成数字符号。
         //可以简单理解位取整
-        console.log(tem,x);
+        console.log(tem,x,y);
     }
     return y;
 };

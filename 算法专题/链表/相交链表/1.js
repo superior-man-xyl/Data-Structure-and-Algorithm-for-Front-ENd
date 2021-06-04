@@ -1,3 +1,4 @@
+//双指针写法
 var getIntersectionNode = function(headA, headB) {
    if(headA==null||headB==null){
     return null;

@@ -1,17 +1,12 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[][]}
- */
 var fourSum = function (nums, target) {
     const res = [];
-    const length = nums.length;
-    if (length < 4) {
+    if (nums.length < 4) {
         return res;
     }
-    nums.sort((a, b) => a - b);
-    for (let i = 0; i < length - 3; i++) { 
-        if (i > 0 && nums[i] === nums[i - 1]) {
+    nums.sort((x, y) => x - y);
+    const length = nums.length;
+    for (let i = 0; i < length - 3; i++) {
+        if (i > 0 && nums[i] === nums[i - 1]) {//这些都是为了解决重复的问题
             continue;
         }
         if (nums[i] + nums[i + 1] + nums[i + 2] + nums[i + 3] > target) {
@@ -33,17 +28,17 @@ var fourSum = function (nums, target) {
             let left = j + 1,
                 right = length - 1;
             while (left < right) {
-                let sum = nums[i] + nums[j] + nums[left] + nums[right];
+                const sum = nums[i] + nums[j] + nums[left] + nums[right];
                 if (sum === target) {
                     res.push([nums[i], nums[j], nums[left], nums[right]]);
-                    left++;
-                    right--;
-                    if (left < right && nums[left] === nums[left + 1]) {
+                    while (left < right && nums[left] === nums[left + 1]) {//一直跳过
                         left++;
                     }
-                    if (left < right && nums[right] === nums[right - 1]) {
+                    left++;
+                    while (left < right && nums[right] === nums[right - 1]) {
                         right--;
                     }
+                    right--;
                 } else if (sum < target) {
                     left++;
                 } else {

@@ -1,3 +1,4 @@
+//类似「滚动数组」的思想， 一直记忆之前的最大值，即i之前的最大值，且维护着空间复杂度为1
 var maxSubArray = function(nums) {
     let ans = nums[0];
     let sum = 0;

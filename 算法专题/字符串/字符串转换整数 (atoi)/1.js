@@ -6,7 +6,7 @@ const myAtoi = function (str) {
         //判断字符串是否符合可转化的范围
         return 0;
     } else {
-        str = parseInt(str)
+        str = parseInt(str);
     }
     //判断数值是否在范围中
     if (str > max) {

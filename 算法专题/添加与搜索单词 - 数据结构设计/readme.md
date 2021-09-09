@@ -29,12 +29,13 @@ wordDictionary.search("b.."); // return True
  
 ```
 提示：
-```
-1 <= word.length <= 500
-addWord 中的 word 由小写英文字母组成
-search 中的 word 由 '.' 或小写英文字母组成
-最多调用 50000 次 addWord 和 search
-```
+- 1 <= word.length <= 500
+- addWord 中的 word 由小写英文字母组成
+- search 中的 word 由 '.' 或小写英文字母组成
+- 最多调用 50000 次 addWord 和 search
+
 来源：力扣（LeetCode）
+
 链接：https://leetcode-cn.com/problems/design-add-and-search-words-data-structure
+
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。

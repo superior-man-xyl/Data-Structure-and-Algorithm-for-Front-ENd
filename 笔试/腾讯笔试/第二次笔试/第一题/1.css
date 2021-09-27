@@ -1,0 +1,17 @@
+.input{
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+    width: 200px;
+    margin-left: 5px;
+    border: 1px solid #efeff4;
+    padding: 5px;
+    outline: 0;
+    resize: none;
+}
+.content {
+    margin-top: 10px;
+}
+.content em{
+    color: #f56c6c;
+}

@@ -24,7 +24,7 @@ var romanToInt = function (s) {
             if (Map[s[i]] < Map[s[i + 1]]) {
                 value = value - Map[s[i]];
             } else {
-                value=value+Map[s[i]];
+                value = value + Map[s[i]];
             }
         }
     }
